@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#050a18"><meta name="description" content="A magical seventeenth birthday for Sia.">
+  <title>Happy Birthday, Sia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/animations.css"><link rel="stylesheet" href="css/responsive.css">
+  <style>.floaters i{position:absolute;display:block;pointer-events:none}.balloon{width:42px;height:52px;border-radius:50% 50% 48% 48%;background:linear-gradient(120deg,#c7ecff,#3a91f5);opacity:.6;box-shadow:inset -8px -8px 12px #1254b866,0 0 25px #5ab5ff55;animation:float 7s ease-in-out infinite}.balloon:after{content:"";position:absolute;top:50px;left:20px;width:1px;height:60px;background:#9fcfff70}.b1{left:10%;top:25%;animation-delay:-2s}.b2{right:12%;top:54%;transform:scale(.7);animation-delay:-5s}.spark{font-size:24px;color:#bde3ff;text-shadow:0 0 16px #5eafff;animation:twinkle 2s infinite}.s1{top:21%;right:23%}.s2{bottom:22%;left:19%;animation-delay:-1s}.butterfly{top:65%;left:12%;font-size:28px;color:#8dc9ff;transform:rotate(28deg);animation:butterfly 5s ease-in-out infinite}.heart{right:14%;bottom:20%;font-size:18px;color:#62b3ff;animation:float 6s -3s ease-in-out infinite}.hero-shoot{width:120px;height:2px;background:linear-gradient(90deg,transparent,#cceeff);right:13%;top:15%;transform:rotate(-25deg);animation:heroShoot 12s 3s infinite}#sky{z-index:0}.aurora{z-index:0}#page{position:relative;z-index:1}.hero{min-height:100vh;min-height:100dvh}@media(max-width:700px){#sky{opacity:.7}.aurora{filter:blur(25px)}.balloon{scale:.75}.floaters .butterfly,.floaters .heart{display:none}.loader{font-size:10px}}</style>
+</head>
+<body>
+  <div class="loader" aria-label="Loading"><span>SIA / 17</span><i></i></div>
+  <div class="cursor-glow" aria-hidden="true"></div><canvas id="sky" aria-hidden="true"></canvas><canvas id="fireworks" aria-hidden="true"></canvas>
+  <div class="aurora" aria-hidden="true"></div>
+  <audio id="piano" loop preload="none"><!-- Replace assets/music/soft-piano.mp3 with your licensed track. --><source src="assets/music/soft-piano.mp3" type="audio/mpeg"></audio>
+  <audio id="celebration" preload="none"><!-- Replace assets/music/celebration.mp3 with your licensed track. --><source src="assets/music/celebration.mp3" type="audio/mpeg"></audio>
+  <main id="page">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="floaters" aria-hidden="true"><i class="balloon b1"></i><i class="balloon b2"></i><i class="spark s1">✦</i><i class="spark s2">✧</i><i class="butterfly">♧</i><i class="heart">♥</i><i class="hero-shoot"></i></div>
+      <p class="eyebrow reveal">A small universe, just for you</p>
+      <h1 id="hero-title"><span class="reveal">Happy Birthday</span><strong class="reveal">Sia</strong><em class="reveal">17</em></h1>
+      <p class="date reveal">JULY 20, 2026</p>
+      <button class="begin reveal" id="begin" type="button">Begin <span>→</span></button>
+      <p class="hint">Tap to enter the celebration</p>
+    </section>
+
+    <div id="experience" hidden>
+      <nav><a href="#home" class="mark">SIA <small>17</small></a><a href="#memories">Memories</a><button id="sound" aria-label="Toggle sound">Sound <span>on</span></button></nav>
+      <section class="count-section section"><p class="eyebrow">A moment worth waiting for</p><div id="countdown" class="countdown" aria-live="polite"></div></section>
+      <section class="cake-section section" id="cake">
+        <div class="section-copy"><p class="eyebrow">Make it count</p><h2>Seventeen lights<br>for your brightest year.</h2><p>Close your eyes, make a wish, and send it gently into the night.</p><button id="blow" class="primary" type="button">Blow Out the Candles <span>✦</span></button><p id="mic-status" class="status" aria-live="polite"></p></div>
+        <div class="cake-stage" aria-label="A three tier birthday cake with seventeen lit candles">
+          <div class="cake-glow"></div>
+          <svg class="cake-svg" viewBox="0 0 480 390" role="img" aria-label="Blue three tier birthday cake">
+            <defs><linearGradient id="blue" x1="0" x2="1"><stop stop-color="#3c78ff"/><stop offset=".5" stop-color="#85c5ff"/><stop offset="1" stop-color="#3161d9"/></linearGradient><filter id="shadow"><feGaussianBlur stdDeviation="10"/></filter></defs>
+            <ellipse cx="240" cy="360" rx="180" ry="18" fill="#000" opacity=".45" filter="url(#shadow)"/>
+            <path d="M55 295 Q55 270 80 270 H400 Q425 270 425 295 V340 H55Z" fill="url(#blue)"/><path d="M55 288 Q70 305 86 287 T118 288 T150 287 T182 288 T214 287 T246 288 T278 287 T310 288 T342 287 T374 288 T406 287 Q420 305 425 288" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
+            <path d="M105 190 Q105 167 127 167 H353 Q375 167 375 190 V270 H105Z" fill="url(#blue)"/><path d="M105 185 Q118 201 132 184 T160 185 T188 184 T216 185 T244 184 T272 185 T300 184 T328 185 T356 184 Q370 201 375 185" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round"/>
+            <path d="M155 113 Q155 92 176 92 H304 Q325 92 325 113 V168 H155Z" fill="url(#blue)"/><path d="M155 108 Q168 123 181 108 T207 108 T233 108 T259 108 T285 108 T312 108 Q320 123 325 108" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+            <g fill="#eaf6ff"><circle cx="95" cy="323" r="6"/><circle cx="145" cy="323" r="6"/><circle cx="195" cy="323" r="6"/><circle cx="245" cy="323" r="6"/><circle cx="295" cy="323" r="6"/><circle cx="345" cy="323" r="6"/><circle cx="145" cy="230" r="5"/><circle cx="200" cy="230" r="5"/><circle cx="255" cy="230" r="5"/><circle cx="310" cy="230" r="5"/><circle cx="205" cy="142" r="5"/><circle cx="245" cy="142" r="5"/><circle cx="285" cy="142" r="5"/></g>
+          </svg><div id="candles" class="candles" aria-hidden="true"></div><div id="smoke" class="smoke" aria-hidden="true"></div>
+        </div>
+      </section>
+      <section class="wish section" id="wish" hidden><p class="eyebrow">The sky is listening</p><h2>Make a wish...</h2><p>Some wishes are too beautiful to say out loud.</p></section>
+      <section class="letter section" id="letter"><div class="letter-card"><p class="eyebrow">A note for you</p><h2>Dear Sia,</h2><p id="typed" aria-live="polite"></p><span class="signature">with all the good things ahead <b>♥</b></span></div></section>
+      <section class="gallery section" id="memories"><p class="eyebrow">Little moments, forever</p><h2>Memory gallery</h2><div class="gallery-grid">
+        <button class="polaroid tall" data-full="assets/images/sia-perfect-makeup.png" data-caption="Perfect Makeup 10/10 — I think it’s always perfect every time, even without it."><img loading="lazy" src="assets/images/sia-perfect-makeup.png" alt="Sia with perfect makeup"><span>Perfect Makeup 10/10</span></button>
+        <button class="polaroid" data-full="assets/images/sia-favorite-pose.png" data-caption="Your favorite pose lol — adorable."><img loading="lazy" src="assets/images/sia-favorite-pose.png" alt="Sia making her favorite pose"><span>your favorite pose lol — adorable</span></button>
+        <button class="polaroid" data-full="assets/images/sia-pre-prime.png" data-caption="Pre-prime Sia the GOAT fr!!!"><img loading="lazy" src="assets/images/sia-pre-prime.png" alt="A childhood photo of Sia"><span>pre-prime Sia the GOAT fr!!!</span></button>
+      </div></section>
+      <footer class="final"><div class="shooting" aria-hidden="true"></div><p>Happy Birthday</p><h2>Sia</h2><span>♥</span></footer>
+    </div>
+  </main>
+  <dialog id="lightbox"><button aria-label="Close image">×</button><img src="" alt=""><p></p></dialog>
+  <script src="js/particles.js"></script><script src="js/countdown.js"></script><script src="js/fireworks.js"></script><script src="js/typing.js"></script><script src="js/gallery.js"></script><script src="js/microphone.js"></script><script src="js/main.js"></script>
+</body></html>
